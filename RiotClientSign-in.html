@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Sign-in</title>
+    <link href="RiotClientSign-in.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- sign-in section -->
+        <div class="sign-in">
+            <div class="riotlogo">
+                <img src="icons/riotgamesred.png">
+            </div>
+
+            <h3>Sign in</h3>
+
+            <div class="textbox">
+                <form>
+                    <div class="field">
+                        <input type="text" id="textfield1" required oninput="check()">
+                        <label>USERNAME</label>
+                    </div>
+                    <div id="field2" class="field">
+                        <input type="password" id="textfield2" required oninput="check()">
+                        <label>PASSWORD</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="brandlogos">
+                <a id="bl1" href="#"><img src="icons/icons8-facebook-100.png"></a>
+                <a id="bl2" href="#"><img src="icons/icons8-google-100.png"></a>
+                <a id="bl3" href="#"><img src="icons/icons8-apple-logo-100.png"></a>
+                <a id="bl4" href="#"><img src="icons/icons8-xbox-100.png"></a>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox">
+                <span>Stay signed in</span>
+            </div>
+
+            <div class="button" id="btn" onclick="validate()" onmouseover="changeBG()" onmouseleave="changeBack()">
+                <img id="img" src="icons/icons8-right-100.png">
+            </div>
+            <div class="statement">
+                <a href="#">CAN'T SIGN IN?</a>
+                <a href="#">CREATE ACCOUNT</a>
+            </div>
+
+            <p id="version">V63.0.5</p>
+        </div>
+
+        <!-- cover image section -->
+        <div class="actimage">
+            <img src="images/RiotSign-in.png">
+        </div>
+    </div>
+
+    <script src="RiotClientSign-in.js"></script>
+</body>
+
+</html>

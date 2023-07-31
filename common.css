@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Tahoma;
+}
+
+/* Container 1 styling */
+.container1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* border: solid 2px blue; */
+}
+
+/* Navigation bar styling */
+.navbar {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    /* border: solid 2px red; */
+}
+
+/* Box 1 & 2 common styling */
+.box1, .box2 {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.8rem;
+    position: fixed;
+    background-color: rgba(38, 38, 38, 0.6);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    /* border: solid 2px yellow; */
+}
+
+/* Box 1 individual styling */
+.box1 {
+    left: 1%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.12rem 0.12rem;
+    padding: 0.8rem 0.7rem; 
+}
+
+.box1 span{
+    width: 1fr;
+    height: 1fr;
+    background-color: rgb(150, 150, 150);
+}
+
+/* Box 2 individual styling */
+.box2 {
+    right: 1%;
+}
+
+.box2 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem; 
+}
+
+/* Box 3 & 4 common styling */
+.box3, .box4 {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.7rem 0.7rem;
+    position: absolute;
+    border-radius: 0.8rem;
+    background-color: rgba(38, 38, 38, 0.6);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.box3 img, .box4 img {
+    width: 100%;
+    height: 100%; 
+}
+
+/* Box 3 individual styling */
+.box3 {
+    bottom: 29%;
+    left: 1%;
+}
+
+/* Box 4 individual styling */
+.box4 {
+    bottom: 20%;
+    left: 1%;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    background-color: rgba(45, 45, 45, 0.6);
+}
+
+/* Video styling */
+.container1 video, #poster {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Options section styling */
+.option {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(50, 50, 50, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 2px green; */
+    align-self: flex-end;
+}
+
+/* Announcements section styling */
+.option .announcements {
+    width: 36%;
+    height: 18%;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 3.5rem;
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    /* border: solid 2px orange; */
+}
+
+.announcements .anc1 {
+    width: 45%;
+    height: 100%;
+    padding: 0.1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    /* border: solid 2px skyblue; */
+}
+
+.announcements .anc2 {
+    width: 55%;
+    height: 100%;
+    padding: 0.1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    /* border: solid 2px indigo; */
+}
+
+.announcements .anc1 img, .announcements .anc2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.decor {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(210, 210, 210, 0.4);
+    font-size: 0.75rem;
+}
+
+.decor h5 {
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+/* Container 2 styling */
+.container2 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    background-color: rgb(20, 18, 18);
+    /* border: solid 2px orchid; */
+}
+
+.details {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    gap: 4rem;
+    /* border: solid 2px green; */
+}
+
+.about {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(220, 220, 220);
+    /* border: solid 2px indianred; */
+}
+
+.description {
+    width: 50%;
+    height: 100%;
+    padding: 0 2rem;
+    color: rgb(200, 200, 200);
+    font-size: 1.1rem;
+    /* border: solid 2px gold; */
+}
+
+.info {
+    width: 25%;
+    height: 100%;
+    padding-left: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2px seagreen; */
+}
+
+#site {
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+#site:hover {
+    text-decoration: underline;
+}
+
+.heading {
+    margin-top: 2rem;
+    color: rgb(90, 90, 90);
+}
+
+.ans {
+    margin-top: 0.4rem;
+    color: rgb(200, 200, 200);
+}
+

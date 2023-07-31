@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamfight Tactics</title>
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Button Styling */
+        .option button {
+            width: 12%;
+            height: 70%;
+            margin-left: 5rem;
+            display: flex;
+            align-items: center;
+            background-color: #ebd936;
+            border-style: none;
+            border-radius: 1.3rem;
+            cursor: pointer;
+            box-shadow: 0 0.2rem 20px -3px #ebd936;
+            transition: 0.13s ease-in-out;
+        }
+
+        .option button .logo1 {
+            width: 25%;
+            height: 62%;
+            margin-left: 1rem;
+            border-radius: 50%;
+            background-color: rgb(20, 20, 20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 7px -3px rgb(20, 20, 20);
+            outline-offset: -1px;
+        }
+
+        .option button .logo1 img {
+            width: 70%;
+            height: 70%;
+            border-style: none;
+        }
+
+        .option button .title h4 {
+            color: #EDEDED;
+            font-size: 1.9rem;
+            margin-left: 1rem;
+        }
+
+        .option button:hover {
+            box-shadow: 0 0.3rem 30px -5px #ebd936;
+        }
+
+        /* Announcement styling on hover */
+        .anc1:hover,
+        .anc2:hover {
+            outline: solid 0.2rem rgb(225, 225, 225);
+            transition: 0.1s ease-in-out;
+            box-shadow: 0 5rem 200px -2px #ebd936;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="box1" onmouseover="changeNew()" onmouseleave="changeBack()" onclick="home()">
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+            </div>
+            <div class="box2" onmouseover="changeImg2()" onmouseleave="changeImg2Back()">
+                <img id="userimg" src="icons/icons8-user-100.png">
+            </div>
+        </div>
+
+        <img id="poster" src="images/Teamfight tactics.jpg">
+
+        <div class="option">
+            <button onmouseover="increase()" onmouseleave="decrease()">
+                <div id="circle" class="logo1">
+                    <img src="icons/icons8-menu-vertical-100.png">
+                </div>
+                <div class="title">
+                    <h4>Play</h4>
+                </div>
+            </button>
+
+            <div class="announcements">
+                <div class="anc1" onclick="promotion()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="images/TT cover 1.jpg">
+                </div>
+                <div class="anc2" onclick="patchNotes()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="images/TT cover 2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <!-- General Section -->
+        <div class="details">
+            <div class="about">
+                <h2>About</h2>
+            </div>
+            <div class="description">
+                <p>
+                    Teamfight Tactics is a round-based strategy game that puts your team
+                    building skills to the test. Bust out the big-brain strats as you draft, position,
+                    and fight your way to victory in an 8-way free-for-all battle. With hundreds of
+                    team combinations and an ever-evolving meta, any strategy goes—but only
+                    one can win. Queue up across a variety of social and competitive modes, then
+                    outsmart and outlast your enemies to take your place at the top!
+                </p>
+            </div>
+            <div class="info">
+                <h4 id="site" onclick="gamesite()">teamfighttactics.leagueoflegends.com</h4>
+                <h4 class="heading">DEVELOPERS</h4>
+                <h4 class="ans">Riot Games</h4>
+                <h4 class="heading">PUBLISHER</h4>
+                <h4 class="ans">Riot Games</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js">
+        // Esports link
+        function promotion() {
+            window.location.href = "https://www.youtube.com/watch?v=xjGMM9W6N7g";
+        }
+
+        // Patch Notes link
+        function patchNotes() {
+            window.location.href = "https://www.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-13-3-notes/";
+        }
+
+        // Official website link
+        function gamesite() {
+            window.location.href = "https://teamfighttactics.leagueoflegends.com/en-gb/";
+        }
+    </script>
+</body>
+
+</html>

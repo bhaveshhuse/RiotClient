@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Button Styling */
+        .option button {
+            width: 15%;
+            height: 70%;
+            margin-left: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #d45f24;
+            border-style: none;
+            border-radius: 1.3rem;
+            cursor: pointer;
+            box-shadow: 0 0.2rem 20px -3px #d45f24;
+            transition: 0.13s ease-in-out;
+        }
+
+        .option button .logo1 {
+            width: 20%;
+            height: 62%;
+            border-radius: 50%;
+            background-color: rgb(20, 20, 20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 7px -3px rgb(20, 20, 20);
+            outline-offset: -1px;
+        }
+
+        .option button .logo1 img {
+            width: 40%;
+            height: 40%;
+            border-style: none;
+        }
+
+        .option button .title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* border: solid 2px green; */
+        }
+
+        .option button .title h4 {
+            color: #EDEDED;
+            font-size: 1.2rem;
+        }
+
+        .option button .title p {
+            color: #dbc2a1;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .option button:hover {
+            box-shadow: 0 0.3rem 30px -5px #d45f24;
+        }
+
+        /* Announcement styling on hover */
+        .anc1:hover,
+        .anc2:hover {
+            outline: solid 0.2rem rgb(225, 225, 225);
+            transition: 0.1s ease-in-out;
+            box-shadow: 0 5rem 200px -2px #d45f24;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="box1" onmouseover="changeNew()" onmouseleave="changeBack()" onclick="home()">
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+            </div>
+            <div class="box2" onmouseover="changeImg2()" onmouseleave="changeImg2Back()">
+                <img id="userimg" src="icons/icons8-user-100.png">
+            </div>
+        </div>
+
+        <img id="poster" src="images/1605547.jpg">
+
+        <div class="option">
+            <button onmouseover="increase()" onmouseleave="decrease()" onclick="downloadsite()">
+                <div id="circle" class="logo1">
+                    <img src="icons/icons8-downloading-updates-100.png">
+                </div>
+                <div class="title">
+                    <h4>Install</h4>
+                    <p>LEAGUE OF LEGENDS</p>
+                </div>
+            </button>
+
+            <div class="announcements">
+                <div class="anc1" onclick="promotion()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="images/3320668.jpg">
+                </div>
+                <div class="anc2" onclick="patchNotes()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="images/217097.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <!-- General Section -->
+        <div class="details">
+            <div class="about">
+                <h2>About</h2>
+            </div>
+            <div class="description">
+                <p>
+                    Showcase your skills in League of Legends: the definitive 5v5 MOBA that
+                    combines team synergy with individual mastery. Pick your role, perfect your
+                    build, and battle your way across the map to destroy the enemy Nexus. With
+                    over 150 champions and limitless ways to play, find your main and forge your
+                    path to victory.
+                </p>
+            </div>
+            <div class="info">
+                <h4 id="site" onclick="gamesite()">leagueoflegends.com</h4>
+                <h4 class="heading">DEVELOPERS</h4>
+                <h4 class="ans">Riot Games</h4>
+                <h4 class="heading">PUBLISHER</h4>
+                <h4 class="ans">Riot Games</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js">
+        // Esports link
+        function promotion() {
+            window.location.href = "https://www.youtube.com/watch?v=i_ujOtLDQco";
+        }
+
+        // Patch Notes link
+        function patchNotes() {
+            window.location.href = "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-3-notes/";
+        }
+
+        // Official website link
+        function gamesite() {
+            window.location.href = "https://www.leagueoflegends.com/en-gb/";
+        }
+
+        // Download site link
+        function downloadsite() {
+            window.location.href = "https://signup.leagueoflegends.com/en-us/signup/redownload";
+        }
+    </script>
+</body>
+
+</html>

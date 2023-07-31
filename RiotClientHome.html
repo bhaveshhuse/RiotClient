@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="RiotClientHome.css" rel="stylesheet" type="text/css">
+    <title>Riot Client Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Section 1-->
+        <div class="section1">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <!-- Main menu shortcut box -->
+                <div class="box1" onmouseover="changeNew()" onmouseleave="changeBack()">
+                    <span class="cube"></span>
+                    <span class="cube"></span>
+                    <span class="cube"></span>
+                    <span class="cube"></span>
+                </div>
+
+                <!-- Riot Games logo -->
+                <img id="riotlogo" src="icons/riotgameswhite.png">
+
+                <!-- User option box -->
+                <div class="box2" onmouseover="changeImg()" onmouseleave="changeImgBack()">
+                    <img id="userimg" src="icons/icons8-user-100.png">
+                </div>
+            </div>
+
+            <!-- My games section -->
+            <div class="mygames">
+                <!-- Heading -->
+                <h3>My Games</h3>
+                <div class="item" onmouseover="imgShadow()" onmouseleave="imgShadowRemove()" onclick="goToGame5()">
+                    <!-- Cover image -->
+                    <div id="coverimage">
+                        <img id="valorantsample" src="images/Valorantcover.png">
+                    </div>
+
+                    <!-- Game name and logo -->
+                    <div class="namelogo">
+                        <img src="icons/icons8-valorant-100.png">
+                        <span>VALORANT</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section2">
+            <!-- All games section -->
+            <div class="allgames">
+                <!-- Heading -->
+                <h3>All Games</h3>
+                <!-- Games section -->
+                <div class="games">
+                    <div class="content" onmouseover="imgShadow1ON()" onmouseleave="imgShadow1OFF()" onclick="goToGame1()">
+                        <div id="coverimage1">
+                            <img id="coverimg1" src="images/LeagueofLegends.png">
+                        </div>
+
+                        <div class="title">
+                            <img src="icons/icons8-league-of-legends-100.png">
+                            <span>League of Legends</span>
+                        </div>
+                    </div>
+
+                    <div class="content" onmouseover="imgShadow2ON()" onmouseleave="imgShadow2OFF()" onclick="goToGame2()">
+                        <div id="coverimage2">
+                            <img id="coverimg2" src="images/LeagueofLegendsWildRift.png">
+                        </div>
+
+                        <div class="title">
+                            <img src="icons/icon LOL-Wild Rift.png">
+                            <span>League of Legends: Wild Rift</span>
+                        </div>
+                    </div>
+
+                    <div class="content" onmouseover="imgShadow3ON()" onmouseleave="imgShadow3OFF()" onclick="goToGame3()">
+                        <div id="coverimage3">
+                            <img id="coverimg3" src="images/LegendsofRuneterra.png">
+                        </div>
+
+                        <div class="title">
+                            <img src="icons/icons8-legends-of-runeterra-100.png">
+                            <span>Legends of Runeterra</span>
+                        </div>
+                    </div>
+
+                    <div class="content" onmouseover="imgShadow4ON()" onmouseleave="imgShadow4OFF()" onclick="goToGame4()">
+                        <div id="coverimage4">
+                            <img id="coverimg4" src="images/Teamfight Tactics.png">
+                        </div>
+
+                        <div class="title">
+                            <img src="icons/TFT_Logomark_White.png">
+                            <span>Teamfight Tactics</span>
+                        </div>
+                    </div>
+
+                    <div class="content" onmouseover="imgShadow5ON()" onmouseleave="imgShadow5OFF()" onclick="goToGame5()">
+                        <div id="coverimage5">
+                            <img id="coverimg5" src="images/Valorantcover.png">
+                        </div>
+
+                        <div class="title">
+                            <img src="icons/icons8-valorant-100.png">
+                            <span>VALORANT</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section3">
+            <!-- Movie promo section -->
+            <div class="movie">
+                <!-- Heading -->
+                <h3>Special Events</h3>
+                <!-- Video section -->
+                <div class="promo">
+                    <video id="vid" poster="images/ArcaneThumbnail.png" muted onclick="nextPage()">
+                        <source  src="videos/Arcane Trailer.mp4" type="video/mp4">
+                    </video>
+                    <h4>Arcane</h4>
+                    <p>
+                        In the cities of Piltover and Zaun, unrest stirs as inventors and thieves,
+                        politicians and crime lords chafe against the constraints of a society torn
+                        asunder. Discovery and danger intertwine as heroes are born and bonds are
+                        broken. Will this power change the world, or lead it to ruin?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="RiotClientHome.js"></script>
+</body>
+
+</html>
